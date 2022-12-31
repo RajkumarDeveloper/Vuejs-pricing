@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Pricing</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300|Josefin+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="pricing.css?v=39" type="text/css">
+</head>
+
+<body>
+    <div id="app">
+        <section class="pricing_main">
+            <div class="redplan_notification hideme"><span></span></div>
+
+            <div class="row">
+                <div><a style="color:black;" href="https://198.anglerfox.bid/aravindkumarb/cart_discount/app/dashboard.php"><span class="back_to_dashboard">&lt; Back to Dashboard</span></a></div>
+                <div class="small-12 column">
+                    <h1 class="heading_title extra_bottom_padding">Upgrade or Downgrade Plan</h1>
+
+                </div>
+            </div>
+            <pricing :prices="{
+            'features':[
+            {'name':'Discount on Cart','tooltip':'Adds a Discount box in the Cart page'},
+            {'name':'Discount on Dragger','tooltip':'Adds Discount box in the Dragger'},
+            {'name':'Strikeout Subtotal','tooltip':'Crossed out the Original price & shows the discounted price in Subtotal'},
+            {'name':'Stack Discount','tooltip':'Apply multiple discount code in single order. One time integration fee of $28 applied extra.'},
+            {'name':'App Translation','tooltip':'Translate each & every word as per your store language during integration'},
+            {'name':'Discount Popups','tooltip':'Catch your customer attention by adding Discount Pop-ups to your store'},
+            {'name':'Discount Popups Templates','tooltip':'Choose from a wide range of templates of Discount Pop-ups'},
+            {'name':'MultiCurrency Support','tooltip':'Support for the stores who use multi currency'},
+            {'name':'Snowfall Effect','tooltip':'Dress up your website for this winter season with snowfall theme'},
+            {'name':'Hanging Animated Lights','tooltip':'Celebrate special occasions with hanging animated lights on the top of your store'},
+            {'name':'Compatibility with other apps','tooltip':'Compatibility with 3rd party apps like product options, wholesale, bulk discount etc.'},
+            {'name':'Support','tooltip':'Our heroic support, ready to assist if you have any questions or facing any issues.'}
+            ],
+            'plan':[
+            {'name':'Starter','price':'4.9','content':'A Starter Plan for Smaller Merchants with Cart Discount setup & 1 Discount Pop-up','current':false,'features':[true,true,true,'-',true,'-','1 Templates','-','-','-','-','Email Only']},
+            {'name':'Lite','price':'8.9','content':'Standard Plan for Growing Business with Cart Discount, more features & 5 Discount Pop-ups','current':true,'features':[true,true,true,true,true,true,'5 Templates',true,true,true,'-','Live Chat']},
+            {'name':'Plus','price':'13.9','content':'For large enterprises, explore everything in app with Priority Support & Custom App Integration','current':false,'features':[true,true,true,true,true,true,'11 Templates',true,true,true,true,'Priority on call']}
+            ]}"></pricing>
+        </section>
+        <contact-us title="Unique Requirements? Speak to us and get a customised plan." button-text="Contact Us">
+        </contact-us>
+        <faqs title="Frequently Asked Questions" :faqs="{'How does this work?':'App suppose to add discount coupon field on cart page or anywhere else in your store.',
+        'How much time does it takes?':'In general we have very simple setup from you. It will not take more time than to get a cup of tea.',
+        'Do you provide anything else in this?':'We are providing manual setup and custom styling option with this app, there you can easily customize your app as you want.',
+        'Does it support custom themes?':'Yes, we are supporting custom themes, but if you find any issues, please let us know at support@anglerfox.com.',
+        'I have a special feature request. What should I do?':'If you have any special request just fill out request a feature form, we will get back to you as soon as possible.',
+        'How I will be charged?':'Payment will be charged by monthly basis. It is like recurring invoices.'}">
+        </faqs>
+    </div>
+    <script src="https://unpkg.com/vue@2.1.3/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
